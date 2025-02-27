@@ -1,0 +1,46 @@
+:root{
+    --color-black: #1b1b1b;
+    --color-white: #fff;
+    --color-green: #16A085;
+    --color-red: #C82647;
+    --color-orange: #EB9532;
+    --color-purple: #7E3661;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 20px;
+    padding: 1.2rem 2.8rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--color-white);
+    border-color: var(--color-orange);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.button:focus{
+    outline: 0;
+}
+
+.button:hover{
+    box-shadow: 0 0 40px 40px var(--color-orange) inset;
+}
